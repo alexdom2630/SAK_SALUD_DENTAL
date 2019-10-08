@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Bienvenid@</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="master">
+
+	<ion-card
+		(click)="loadDetails( currentCard)"
+		*ngFor="let currentCard of _dataCards">
+		<img src="assets/imgs/{{currentCard.image}}">
+		<ion-card-content>
+			<ion-card-title>{{currentCard.title | uppercase }}</ion-card-title>
+			
+		</ion-card-content>
+	</ion-card>
+	
+
+</ion-content>
